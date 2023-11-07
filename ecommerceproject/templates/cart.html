@@ -49,7 +49,7 @@
                 <td>
                     <a href="cart_item.product.get_absolute_url"><img src="{{cart_item.product.image.url}} " style='width:100px;height:100px;' alt="" class="float-left rounded custom_image"></a>
                 </td>
-                <td class="text-lef">
+                <td class="text-left">
                     {{cart_item.product.name}}
                     <br>
                     SKU: {{cart_item.product.id}}
@@ -103,7 +103,10 @@
         </tbody>
     </table>
     <div class="mx-auto">
-        <a href="{% url 'shop:allProdCat' %}" class="btn btn-secondary btn-block my_custom_button">Continue Shopping</a>
+        <a href="{% url 'shop:allProdCart' %}" class="btn btn-secondary btn-block my_custom_button">Continue Shopping</a>
+    </div>
+        <div class="mx-auto">
+        <a href="{% url 'shop:allProdCart' %}" class="btn btn-secondary btn-block my_custom_button">Checkout</a>
     </div>
 </div>
 
