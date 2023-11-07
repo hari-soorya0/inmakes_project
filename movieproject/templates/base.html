@@ -13,6 +13,10 @@
   <a class="navbar-brand" href="#">
     Online Movie Portal
   </a>
+      <form class="d-flex" action="{% url 'movieapp:add_movie' %}" method="get">
+        {% csrf_token %}
+        <button class="btn btn-outline-success" type="submit"><i class="fa fa-search">Add</i></button>
+      </form>
 </nav>
 {% block body %}
 {% endblock %}
